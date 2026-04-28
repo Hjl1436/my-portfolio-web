@@ -1,86 +1,150 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--==================== UNICONS ====================-->
-        
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+    <title>이혁주 포트폴리오</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Hyeokju</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__data">
+                        <h1 class="home__title">안녕하세요, 이혁주입니다</h1>
+                        <h3 class="home__subtitle">컴퓨터공학 전공생</h3>
+                        <p class="home__description">리눅스 시스템 프로그래밍과 컴퓨터 그래픽스를 깊이 있게 공부하고 있습니다.</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
-            </section>
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <p class="about__description">
+                        한국외국어대학교에서 컴퓨터공학을 전공하고 있으며, 로우레벨 컴퓨팅과 효율적인 시스템 설계에 관심이 많습니다. 
+                        문제를 기술적으로 해결하는 과정과 새로운 기술을 익혀 적용하는 것을 즐깁니다.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Programming & Tools</h3>
+                    <div class="skills__list grid">
+                        <div class="skills__data">C / C++ / x86-64 Assembly</div>
+                        <div class="skills__data">Linux (POSIX) & Shell Script</div>
+                        <div class="skills__data">Docker & VS Code Dev Containers</div>
+                        <div class="skills__data">Firebase & Figma</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            </section>
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">최근 진행한 프로젝트들</span>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+            <div class="portfolio__container container grid">
+                <article class="portfolio__card">
+                    <div class="portfolio__content">
+                        <h3 class="portfolio__title">N-CUBE Summer Project</h3>
+                        <p class="portfolio__description">학회 팀 프로젝트에서 프론트엔드 담당으로 UI 구현 및 Firebase 연동을 수행했습니다.</p>
+                        <a href="https://github.com/Hjl1436/N-CUBE-2025-summer_team3.git" target="_blank" class="portfolio__link">
+                            View Project <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
 
-            </section>
+                <article class="portfolio__card">
+                    <div class="portfolio__content">
+                        <h3 class="portfolio__title">Dorm Laundry</h3>
+                        <p class="portfolio__description">기숙사 세탁기 현황 확인 및 알림 서비스 개발에 프론트엔드로 참여했습니다.</p>
+                        <a href="https://github.com/kcg020529/dorm-laundry.git" target="_blank" class="portfolio__link">
+                            View Project <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
+                <article class="portfolio__card">
+                    <div class="portfolio__content">
+                        <h3 class="portfolio__title">STM32 MCU Programming</h3>
+                        <p class="portfolio__description">STM32F103 보드를 활용하여 센서 데이터 제어 및 임베디드 시스템 실습을 진행했습니다.</p>
+                        <a href="#" class="portfolio__link">
+                            View Project <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
+                <article class="portfolio__card">
+                    <div class="portfolio__content">
+                        <h3 class="portfolio__title">Linux System Programming</h3>
+                        <p class="portfolio__description">POSIX 시스템 콜을 활용한 프로세스 동기화 및 파일 I/O 구현 프로젝트입니다.</p>
+                        <a href="#" class="portfolio__link">
+                            View Project <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+            <div class="contact__container container grid">
+                <div class="contact__information">
+                    <i class="uil uil-envelope contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">Email</h3>
+                        <span class="contact__subtitle">본인이메일@hufs.ac.kr</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            </section>
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <p class="footer__copy">&#169; Hyeokju. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
-
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
-
-        <!--==================== MAIN JS ====================-->
-        <script src=""></script>
-    </body>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
