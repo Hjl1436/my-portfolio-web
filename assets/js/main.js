@@ -50,24 +50,14 @@ const projectDetails = {
                 <li><strong>표시 장치 제어:</strong> 8-bit 모드 TEXT LCD 제어 알고리즘 및 비지 플래그(Busy Flag) 체크 로직 구현 (Lab 10)</li>
             </ul>
             <div style="margin-top: 1rem;">
-                <a href="혁주님의_구글독스_공유링크" target="_blank" class="portfolio__link" style="font-size: 0.8rem;">
+                <a href="https://drive.google.com/drive/folders/15NFufNs_NRM3Cmf3aVb0oHRU7Y2Pvrni?usp=drive_link" target="_blank" class="portfolio__link" style="font-size: 0.8rem;">
                     [실습 전체 리포트(Google Docs) 보기]
                 </a>
             </div>
         `
     }
-    
-    'hdl': {
-        title: 'Verilog Sequence Detector 설계',
-        content: `
-            <p>Vivado를 활용하여 특정 비트 패턴(001)을 감지하는 하드웨어를 설계했습니다.</p>
-            <ul>
-                <li><strong>Design:</strong> Mealy/Moore 상태 머신(FSM) 설계 및 상태 전이도 최적화</li>
-                <li><strong>Analysis:</strong> Behavioral 모델링과 Dataflow 모델링의 합성(Synthesis) 결과 비교</li>
-                <li><strong>Simulation:</strong> Testbench 작성을 통한 타이밍 다이어그램 검증</li>
-            </ul>
-        `
-    }
+
+  
 };
 
 function openModal(projectId) {
