@@ -303,7 +303,29 @@ img {
 }
 /*==================== NAV ====================*/
 
+/* 상단 메뉴바 오른쪽 정렬 */
+.nav__menu {
+    margin-left: auto; /* 로고와 메뉴 사이의 간격을 최대로 벌려 메뉴를 오른쪽으로 밉니다 */
+}
 
+/* 만약 위 방법으로 안 된다면 아래 방법을 시도해 보세요 (Flexbox 방식) */
+.nav {
+    display: flex;
+    justify-content: space-between; /* 로고는 왼쪽, 메뉴는 오른쪽 끝으로 배치 */
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 2rem; /* 메뉴 아이템 사이의 간격 */
+}
+
+/* 모바일 환경(화면이 작을 때) 메뉴 위치 조정 */
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        margin-left: 0; /* 모바일에서는 하단 탭바 형태이므로 중앙 정렬 유지 */
+    }
+}
 /* show menu */
 
 
