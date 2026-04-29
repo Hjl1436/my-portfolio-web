@@ -122,11 +122,18 @@
                         <p class="portfolio__description">
                         Vivado를 사용하여 001 패턴을 감지하는 Sequence Detector를 설계하고, Dataflow 및 Behavioral 모델링의 차이를 분석했습니다.
                         </p>
-                        <a href="#" class="portfolio__link">
-                        View Project <i class="uil uil-arrow-right"></i>
+                        <a href="javascript:void(0)" onclick="openModal('hdl')"  class="portfolio__link">
+                        View Details <i class="uil uil-arrow-right"></i>
                         </a>
                     </div>
                 </article>
+                <div id="portfolioModal" class="modal">
+                    <div class="modal-content">
+                         <span class="close" onclick="closeModal()">&times;</span>
+                        <div id="modal-body">
+                        </div>
+                </div>
+            </div>
 
                 <article class="portfolio__card">
                     <div class="portfolio__content">
