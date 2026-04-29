@@ -192,6 +192,48 @@ img {
     font-weight: var(--font-medium);
 }
 
+/* 모달 배경 */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(5px);
+}
+
+/* 모달 박스 */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* 닫기 버튼 */
+.close {
+    position: absolute;
+    right: 20px; top: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+}
+
+/* 모달 내 텍스트 스타일 */
+.modal h3 { color: var(--title-color); margin-bottom: 1rem; }
+.modal ul { margin-left: 1.2rem; margin-top: 1rem; }
+.modal li { margin-bottom: 0.5rem; list-style: disc; }
+
 /* 모바일 대응 (한 줄에 1개씩) */
 @media screen and (max-width: 568px) {
     .portfolio__container {
